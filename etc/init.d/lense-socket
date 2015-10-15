@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import lense.common.config
+import lense.common.config as config
 from lsbinit import LSBInit
 
 ### BEGIN INIT INFO
@@ -16,7 +16,7 @@ from lsbinit import LSBInit
 if __name__ == '__main__':
 	
 	# Get the configuration
-	CONFIG = config.parse('SERVER')
+	CONFIG = config.parse('SOCKET')
 	
 	# Create the service handler
 	service = LSBInit(
