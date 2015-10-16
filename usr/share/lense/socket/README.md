@@ -3,5 +3,5 @@
 When installed Node.js modules using NPM, this folder should be used as the prefix:
 
 ```sh
-$ sudo npm install --prefix /usr/share/lense/socket socket.io ini winston
+$ sudo npm install --prefix /usr/share/lense/socket socket.io winston
 ```

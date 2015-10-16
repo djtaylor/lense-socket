@@ -38,8 +38,7 @@ function SocketProxy() {
 	this.https_l = require('https');
 	this.https_r = require('https');
 	
-	// Configuration and base logger modules
-	this.ini     = require(self.modules + '/ini');
+	// Logger module
 	this.winston = require(self.modules + '/winston');
 	
 	/**
@@ -54,7 +53,7 @@ function SocketProxy() {
 		try {
 			
 			// Parse the configuration object
-			self.conf = self.ini.parse(conf_file);
+			self.conf = JSON.parse(conf_file);
 		} catch (e) {
 			console.log('Failed to parse configuration file \'' + conf_file + '\': ' + e);
 			process.exit(1);
