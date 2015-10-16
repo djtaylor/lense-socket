@@ -2,3 +2,4 @@ usr/bin/lense-socket /usr/bin/
 etc/init.d/lense-socket etc/init.d/
 etc/lense/socket.conf etc/lense/
 etc/lense/socket.default.conf etc/lense/
+usr/share/lense/socket/README.md usr/share/lense/socket/

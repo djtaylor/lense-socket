@@ -23,9 +23,12 @@ function SocketProxy() {
 	// API URL
 	this.api_url = null;
 	
+	// Module path
+	this.modules = '/usr/share/lense/socket/node_modules'
+	
 	// Filesystem and Socket.IO modules
 	this.fs      = require('fs');
-	this.io      = require('socket.io');
+	this.io      = require(self.modules + '/socket.io');
 	
 	// Listener and request HTTP modules
 	this.http_l  = require('http');
@@ -36,8 +39,8 @@ function SocketProxy() {
 	this.https_r = require('https');
 	
 	// Configuration and base logger modules
-	this.ini     = require('ini');
-	this.winston = require('winston');
+	this.ini     = require(self.modules + '/ini');
+	this.winston = require(self.modules + '/winston');
 	
 	/**
 	 * Socket Configuration
