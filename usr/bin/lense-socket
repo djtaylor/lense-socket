@@ -236,9 +236,9 @@ function SocketProxy() {
     	    headers: {
     	    	'Content-Type': 'application/json',
     	        'Content-Length': request_data.length,
-    	        'CS-API-User': client.auth.user,
-    	        'CS-API-Group': client.auth.group,
-    	        'CS-API-Token': client.auth.token
+    	        'Lense-API-User': client.auth.user,
+    	        'Lense-API-Group': client.auth.group,
+    	        'Lense-API-Token': client.auth.token
     	    }
     	};
     	
