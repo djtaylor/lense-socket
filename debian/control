@@ -12,4 +12,4 @@ Package: lense-socket
 Architecture: all
 Depends: lense-common (>= 0.1.1),
 	 	 nodejs (>= 0.10)
-Description: Socket.IO proxy for the Lense API engine.
+Description: Lense Socket.IO proxy server
