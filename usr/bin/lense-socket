@@ -1,6 +1,1 @@
-// Get the node_modules path
-lense_mod = '/usr/share/lense/socket/node_modules/lense-socket-npm';
-
-// Bootstrap Lense Socket
-lense_socket = require(lense_mod);
-lense_socket.bootstrap()
+require('/usr/share/lense/socket/node_modules/lense-socket-npm');

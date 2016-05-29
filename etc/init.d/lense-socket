@@ -20,11 +20,12 @@ if __name__ == '__main__':
 	
 	# Create the service handler
 	service = LSBInit(
-		name = 'lense-socket',
-		desc = 'Lense SocketIO proxy server',
-		pid  = CONFIG.socket.pid,
-		lock = CONFIG.socket.lock,
-		exe  = ['nodejs', CONFIG.socket.exe]
+		name   = 'lense-socket',
+		desc   = 'Lense SocketIO proxy server',
+		pid    = CONFIG.socket.pid,
+		lock   = CONFIG.socket.lock,
+		exe    = ['nodejs', CONFIG.socket.exe],
+		output = '{0}.error'.format(CONFIG.socket.log)
 	)
 	
 	# Launch the service handler
