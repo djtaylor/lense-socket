@@ -1,0 +1,15 @@
+Source: lense-socket
+Section: python
+Priority: optional
+Maintainer: David Taylor <djtaylor13@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/djtaylor/lense-socket
+Vcs-Git: git://github.com/djtaylor/lense-socket.git
+Vcs-Browser: https://github.com/djtaylor/lense-socket
+
+Package: lense-socket
+Architecture: all
+Depends: lense-common (>= 0.1.1),
+	 	 nodejs (>= 0.10)
+Description: Lense Socket.IO proxy server
